@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  img{
+    width: 46px;
+    margin-right: 10px;
+    animation: logoTranstion 1s linear infinite;
+  }
+  .title {
+    font-size: 26px;
+    color: transparent;
+    text-align: center;
+    transform: scale(1.2) translate(10px, 0);
+    -webkit-text-stroke-color: #61ddfd;
+    -webkit-text-stroke-width: 2px;
+  }
+  // .line{
+  //   width: 90%;
+  //   height: 1px;
+  //   background-color: #666;
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 50%;
+  //   transform: translateX(-50%) scaleY(0.5);
+
+  // }
+}
+
+:global{
+  .line{
+    width: 90%;
+    height: 1px;
+    background-color: #666;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleY(0.5);
+  }
+}
+
+@keyframes logoTranstion{
+  to{transform: rotate(360deg)}
+  from{transform: rotate(0deg)}
+}
